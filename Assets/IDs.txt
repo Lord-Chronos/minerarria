@@ -1,0 +1,9 @@
+0 - air
+1 - dirt
+2 - stone
+3 - grass
+4 - planks
+5 - glass
+6 - poppy
+7 - daffodil
+8 - torch

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1672172758501022}
+  m_IsPrefabParent: 1
+--- !u!1 &1672172758501022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4584260257998880}
+  - component: {fileID: 114490764654495024}
+  m_Layer: 0
+  m_Name: Chunk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4584260257998880
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672172758501022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114490764654495024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672172758501022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefc3ec02095eab4e891262b1b455570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xLength: 64
+  yLength: 72
+  yScale: 48
+  yPower: 1.5
+  tileDims: 0.125
+  perlinInterval: 0.025
+  dirtLayers: 3
+  stoneTile: {fileID: 4284981694461742, guid: e5ec9a1896d57e84c8a4ad0d97802359, type: 2}
+  dirtTile: {fileID: 4284981694461742, guid: e45f7aeb2179e71458f755de101958c1, type: 2}
+  grassTile: {fileID: 4284981694461742, guid: 2e7b0e8b5e640734e9df6330757db59c, type: 2}
+  planksTile: {fileID: 4284981694461742, guid: d1b1c76cd6765ee4287cfcacf36cd108, type: 2}
+  orderX: 0
