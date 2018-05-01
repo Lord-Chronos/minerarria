@@ -57,6 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impedence: 0
   lightemitlevel: 18
+  lightlevel: 0
 --- !u!114 &114225153318133126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3468,8 +3469,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2010838273
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0

@@ -53,7 +53,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4135ef52ef0fd0e42a1babb59abe65e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impedence: 0
+  impedence: 1
+  lightemitlevel: 0
   lightlevel: 0
 --- !u!114 &114478233562391866
 MonoBehaviour:
