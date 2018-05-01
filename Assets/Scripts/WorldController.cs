@@ -121,7 +121,8 @@ public class WorldController : MonoBehaviour {
         ChunkController controller = newChunk.GetComponent<ChunkController>(); // Grab the controller
         controller.orderX = orderX; // Set it's position
         controller.GenerateChunk(perlinX, seed); // Generate the terrain
-        controller.CreateTiles(); // Create all tiles
+        IEnumerator coroutine = controller.CreateTiles();
+        StartCoroutine(coroutine); // Create all tiles
         chunks.Add(newChunk); // Add it to the loaded chunks
         ChunkIDs.Add(orderX); // ID the new chunk
         chunks = chunks.OrderBy(o => o.GetComponent<ChunkController>().orderX).ToList();

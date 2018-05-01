@@ -60,7 +60,7 @@ public class ChunkController : MonoBehaviour {
 	}
 	
 	// Creates all of the tiles in the chunkmap. This must be called AFTER GenerateChunk()!
-	public void CreateTiles () {
+	public IEnumerator CreateTiles () {
         tilelist = GameObject.Find("World").GetComponent<Tiles>();
         tiles = new Transform[xLength, yLength]; // Creates the tile array
         backTiles = new Transform[xLength, yLength];
@@ -73,8 +73,8 @@ public class ChunkController : MonoBehaviour {
                 {
                     placeTile(tilelist.GetTileFromID(backMap[x, y]), x, y, tilelist.GetRotationFromID(backMap[x, y]), true);
                 }
-              
             }
+            yield return null;
         }
         LightUpdate();
 	}
